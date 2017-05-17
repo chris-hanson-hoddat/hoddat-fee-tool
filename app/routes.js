@@ -67,19 +67,16 @@ router.get('/small-companies-group', function (req, res) {
 
 })
 
-router.get('/outcome', function (req, res) {
+router.get('/check', function (req, res) {
   var smallcompaniesgroup = req.session.data['smallcompaniesgroup']
 
   if (smallcompaniesgroup == 'Yes') {
     req.session.data['outcome'] = 'large';
-    res.render('outcome');
+    res.redirect('outcome');
   }
   else if (smallcompaniesgroup == 'No') {
     req.session.data['outcome'] = 'small';
-    res.render('outcome');
-  }
-  else {
-    res.render('outcome');
+    res.redirect('outcome');
   }
 
 })
