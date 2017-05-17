@@ -7,58 +7,45 @@
 {% block content %}
 
 <main id="content" role="main">
+
+  {% include "includes/phase_banner_proto.html" %}
+
   <div class="grid-row">
     <div class="column-two-thirds">
 
-      <h1 class="heading-xlarge">
-        The GOV.UK prototype kit
-        <span class="heading-secondary">{{releaseVersion}}</span>
-      </h1>{{releaseVersion | log }}
-      <p>
-        This kit lets you rapidly create HTML prototypes of GOV.UK services.
-      </p>
+      <h1 class="heading-xlarge margin-bottom-30">
+        Prototype for sponsorship fee checking
+      </h1>
+      <p><a href="start" class="button">View the current prototype</a></p>
 
-      <p>
-        It contains all you need to prototype anything from simple static pages to complex, data-driven transactions.
-      </p>
 
-      <h2 class="heading-medium">About this page</h2>
+      <!-- <h2 class="heading-medium">Previous versions</h2>
 
-      <p>We recommend you add links to your prototype to this page, rather than delete it.
-        You'll find this page in the kit at '/app/views/index.html'.</p>
-      <p>You can change the service name by editing the file '/app/config.js'.</p>
+      <ul class="list">
 
-			<h2 class="heading-medium">Examples and documentation</h2>
+        <li class="margin-bottom-30">
+          <p class="lede margin-bottom-15">
+            <a href="https://sms-redesign-v1.herokuapp.com/home">Version 1</a>
+          </p>
+          <p class="form-hint">
+            Beginning of PI-1 and tested on 1 March 2017.
+          </p>
+          <details role="group" style="border: 0; margin-top: 10px">
+            <summary role="button" aria-controls="v1-changelog" aria-expanded="false">
+              Version 1 changelog
+            </summary>
+            <div id="v1-changelog" aria-hidden="true">
+              <ul class="list list-bullet">
+                <li>First tested version which includes a basic structure with <a href="home">landing page</a> which links down to sub-sections and a full flow for <a href="/licence/ao-replace/start">replace AO</a></li>
+              </ul>
+            </div>
+          </details>
+        </li>
 
-			<ul class="list list-bullet">
-				<li><a href="/docs/tutorials-and-examples">Example pages and documentation</a></li>
-				<li><a href="https://github.com/alphagov/govuk_prototype_kit">GitHub</a></li>
-			</ul>
-
-      <h2 class="heading-medium">Other resources</h2>
-
-			<ul class="list list-bullet">
-				<li>
-					<a href="https://govuk-elements.herokuapp.com/snippets/">
-						Guide to GOV.UK Elements
-					</a>
-				</li>
-				<li>
-					<a href="https://www.gov.uk/service-manual">
-						Service design manual
-					</a>
-				</li>
-				<li>
-					<a href="https://www.gov.uk/design-principles">
-						Government Digital Service Design Principles
-					</a>
-				</li>
-			</ul>
+      </ul> -->
 
     </div>
   </div>
 </main>
 
 {% endblock %}
-
-

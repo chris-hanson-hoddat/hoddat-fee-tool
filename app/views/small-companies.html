@@ -1,0 +1,62 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Companies excluded from the small companies regime
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  {% include "includes/phase_banner_proto.html" %}
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <a onclick="history.go(-1); return false;" href="#0" class="link-back">Back</a>
+
+      <h1 class="heading-large">
+        Companies excluded from the small companies regime
+      </h1>
+
+      <p>The Companies Act 2006 excludes the following types of companies from the small companies regime:</p>
+      <ul class="list list-bullet">
+        <li>public companies</li>
+        <li>authorised insurance companies</li>
+        <li>banking companies</li>
+        <li>e-money issuers</li>
+        <li>Markets in Financial Instruments Directive 2004/39/EC (MiFID) investment firms</li>
+        <li>Undertakings for Collective Investment in Transferable Securities (UCITS) management companies</li>
+        <li>companies that carry on insurance market activity</li>
+      </ul>
+
+      <form action="small-companies-group" method="get" class="form">
+
+        <h2 class="heading-medium">Has your organisation been any of these types of companies in the last financial year?</h2>
+
+        <div class="form-group">
+          <fieldset class="inline">
+            <legend class="visually-hidden">Has your organisation been any of these types of company in the last financial year?</legend>
+            <div class="multiple-choice">
+              <input id="smallcompaniesYes" type="radio" name="smallcompanies" value="Yes" {{ checked('smallcompanies','Yes') }}>
+              <label for="smallcompaniesYes">Yes</label>
+            </div>
+
+            <div class="multiple-choice">
+              <input id="smallcompaniesNo" type="radio" name="smallcompanies" value="No" {{ checked('smallcompanies','No') }}>
+              <label for="smallcompaniesNo">No</label>
+            </div>
+          </fieldset>
+        </div>
+
+        <div class="form-group">
+          <input class="button" type="submit" value="Continue">
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}

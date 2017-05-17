@@ -1,0 +1,61 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Groups ineligible for the small companies regime
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  {% include "includes/phase_banner_proto.html" %}
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <a onclick="history.go(-1); return false;" href="#0" class="link-back">Back</a>
+
+      <h1 class="heading-large">
+        Groups ineligible for the small companies regime
+      </h1>
+
+      <p>Groups that include the following types of companies are ineligible for the small companies regime under The Companies Act 2006:</p>
+      <ul class="list list-bullet">
+        <li>traded companies</li>
+        <li>body corporates (other than companies) whose shares are admitted to trading on a regulated market in an EEA State</li>
+        <li>people (other than small companies) who have permission under Part 4 of the Financial Services and Markets Act 2000 (c. 8) to carry on a regulated activity</li>
+        <li>e-money issuers</li>
+        <li>a small companies that are authorised insurance companies, banking companies, Markets in Financial Instruments Directive 2004/39/EC (MiFID) investment firms or Undertakings for Collective Investment in Transferable Securities (UCITS) management companies</li>
+        <li>people who carry on insurance market activity</li>
+      </ul>
+
+      <form action="outcome" method="get" class="form">
+
+        <h2 class="heading-medium">Has your organisation been a member of a group that includes any of these types of company in the last financial year?</h2>
+
+        <div class="form-group">
+          <fieldset class="inline">
+            <legend class="visually-hidden">Has your organisation been a member of a group that includes any of these types of company in the last financial year?</legend>
+            <div class="multiple-choice">
+              <input id="smallcompaniesgroupYes" type="radio" name="smallcompaniesgroup" value="Yes" {{ checked('smallcompaniesgroup','Yes') }}>
+              <label for="smallcompaniesgroupYes">Yes</label>
+            </div>
+
+            <div class="multiple-choice">
+              <input id="smallcompaniesgroupNo" type="radio" name="smallcompaniesgroup" value="No" {{ checked('smallcompaniesgroup','No') }}>
+              <label for="smallcompaniesgroupNo">No</label>
+            </div>
+          </fieldset>
+        </div>
+
+        <div class="form-group">
+          <input class="button" type="submit" value="Continue">
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}

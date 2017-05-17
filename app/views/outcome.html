@@ -1,0 +1,105 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Outcome
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  {% include "includes/phase_banner_proto.html" %}
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <a onclick="history.go(-1); return false;" href="#0" class="link-back">Back</a>
+
+      {% if data['devcontent'] != 'true' %}
+
+        {% if data['outcome'] == 'small' %}
+          <p class="lede">Based on your answers you are a:</p>
+          <h1 class="heading-xlarge">Small or charitable sponsor </h1>
+          <p>This means:</p>
+          <ul class="list list-bullet">
+            <li>renewing your licence will cost &pound;536</li>
+            <li>joining the premium sponsor scheme will cost &pound;8,000</li>
+            <li>joining the premium sponsor scheme for 3 months will cost &pound;2,000</li>
+          </ul>
+          <p>The <a href="https://www.gov.uk/uk-visa-sponsorship-employers/immigration-skills-charge">immigration skills charge</a> will cost:</p>
+          <ul class="list list-bullet">
+            <li>&pound;364 for the first 12 months you employ a sponsored worker </li>
+            <li>&pound;182 for each additional 6 months you employ a sponsored worker</li>
+          </ul>
+
+        {% elif data['outcome'] == 'large' %}
+          <p class="lede">Based on your answers you are a:</p>
+          <h1 class="heading-xlarge">Large Tier 2 sponsor</h1>
+          <p>This means:</p>
+          <ul class="list list-bullet">
+            <li>renewing your licence will cost &pound;1,476 </li>
+            <li>joining the premium sponsor scheme will cost &pound;25,000</li>
+            <li>joining the premium sponsor scheme for 3 months will cost &pound;6,250 </li>
+          </ul>
+          <p>The <a href="https://www.gov.uk/uk-visa-sponsorship-employers/immigration-skills-charge">immigration skills charge</a> will cost:</p>
+          <ul class="list list-bullet">
+            <li>&pound;1,000 for the first 12 months you employ a sponsored worker </li>
+            <li>&pound;500 for each additional 6 months you employ a sponsored worker</li>
+          </ul>
+        {% else %}
+          <p>Error: no outcome. <a href="start">Start again</a></p>
+        {% endif %}
+
+
+
+
+      {% else %}
+      <!-- All content shown for dev -->
+        <div class="dev-note-block">
+          <span class="dev-note">If the sponsor is small</span>
+
+          <p class="lede">Based on your answers you are a:</p>
+          <h1 class="heading-xlarge">Small or charitable sponsor </h1>
+          <p>This means:</p>
+          <span class="dev-note">Amounts pulled in when fees added to system</span>
+          <ul class="list list-bullet">
+            <li>renewing your licence will cost &pound;536</li>
+            <li>joining the premium sponsor scheme will cost &pound;8,000</li>
+            <li>joining the premium sponsor scheme for 3 months will cost &pound;2,000</li>
+          </ul>
+          <p>The <a href="https://www.gov.uk/uk-visa-sponsorship-employers/immigration-skills-charge">immigration skills charge</a> will cost:</p>
+          <span class="dev-note">Amounts pulled in when fees added to system</span>
+          <ul class="list list-bullet">
+            <li>&pound;364 for the first 12 months you employ a sponsored worker </li>
+            <li>&pound;182 for each additional 6 months you employ a sponsored worker</li>
+          </ul>
+        </div>
+
+
+        <div class="dev-note-block">
+          <span class="dev-note">If the sponsor is large</span>
+
+          <p class="lede">Based on your answers you are a:</p>
+          <h1 class="heading-xlarge">Large Tier 2 sponsor</h1>
+          <p>This means:</p>
+          <span class="dev-note">Amounts pulled in when fees added to system</span>
+          <ul class="list list-bullet">
+            <li>renewing your licence will cost &pound;1,476 </li>
+            <li>joining the premium sponsor scheme will cost &pound;25,000</li>
+            <li>joining the premium sponsor scheme for 3 months will cost &pound;6,250 </li>
+          </ul>
+          <p>The <a href="https://www.gov.uk/uk-visa-sponsorship-employers/immigration-skills-charge">immigration skills charge</a> will cost:</p>
+          <span class="dev-note">Amounts pulled in when fees added to system</span>
+          <ul class="list list-bullet">
+            <li>&pound;1,000 for the first 12 months you employ a sponsored worker </li>
+            <li>&pound;500 for each additional 6 months you employ a sponsored worker</li>
+          </ul>
+        </div>
+
+      {% endif %}
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}

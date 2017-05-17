@@ -38,11 +38,25 @@
 
 {% block footer_support_links %}
   {% if useAutoStoreData %}
-    <ul>
+  <ul>
+    <li>
+      <a href="/prototype-admin/clear-data">Clear data</a>
+    </li>
+    <form action="#" method="post" id="devswitch">
+      {% if data['devcontent'] != 'true' %}
+      <input type="text" name="devcontent" value="true" hidden="">
       <li>
-        <a href="/prototype-admin/clear-data">Clear data</a>
+        <a href="#" onclick="$('#devswitch').submit()">Turn on dev content</a>
       </li>
-    </ul>
+      {% else %}
+      <input type="text" name="devcontent" value="false" hidden="">
+      <li>
+        <a href="#" onclick="$('#devswitch').submit()">Turn off dev content</a>
+      </li>
+      {% endif %}
+    </form>
+
+  </ul>
   {% endif %}
 {% endblock %}
 

@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Are you a registered charity?
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  {% include "includes/phase_banner_proto.html" %}
+  
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <a onclick="history.go(-1); return false;" href="#0" class="link-back">Back</a>
+
+      <h1 class="heading-large">
+        Are you a registered charity?
+      </h1>
+
+      <form action="employees" method="get" class="form">
+
+        <div class="form-group">
+          <fieldset class="inline">
+            <legend class="visually-hidden">Are you a registered charity?</legend>
+            <div class="multiple-choice">
+              <input id="charityYes" type="radio" name="charity" value="Yes" {{ checked('charity','Yes') }}>
+              <label for="charityYes">Yes</label>
+            </div>
+
+            <div class="multiple-choice">
+              <input id="charityNo" type="radio" name="charity" value="No" {{ checked('charity','No') }}>
+              <label for="charityNo">No</label>
+            </div>
+
+          </fieldset>
+        </div>
+
+        <div class="form-group">
+          <input class="button" type="submit" value="Continue">
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}

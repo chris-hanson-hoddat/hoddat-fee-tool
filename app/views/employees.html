@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  How many people does your organisation employ?
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  {% include "includes/phase_banner_proto.html" %}
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <a onclick="history.go(-1); return false;" href="#0" class="link-back">Back</a>
+
+      <h1 class="heading-large">
+        How many people does your organisation employ?
+      </h1>
+
+      <form action="turnover" method="get" class="form">
+
+        <div class="form-group">
+          <label class="form-label" for="employees">Number of employees</label>
+          <input class="form-control" id="employees" name="employees" value="{{ data['employees']}}" type="text" autocomplete="off">
+        </div>
+
+        <div class="form-group">
+          <input class="button" type="submit" value="Continue">
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}

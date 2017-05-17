@@ -29,3 +29,22 @@ $path: "/public/images/";
 }
 
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
+
+
+// HIGHLIGHT CONTENT FOR DEVS
+.dev-note {
+  background-color: lighten($baby-pink, 15%);
+  font-family: monospace;
+  padding: 2px 8px;
+}
+
+.dev-note-block {
+  clear: both;
+  border-left: 8px solid lighten($mauve, 30%);
+  padding-left: 10px;
+
+  .dev-note:first-of-type {
+    background-color: lighten($mauve, 30%);
+    margin-left: -18px;
+  }
+}

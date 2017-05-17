@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Was the total of your organisation&rsquo;s last annual balance sheet more than &pound;5.1 million?
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  {% include "includes/phase_banner_proto.html" %}
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <a onclick="history.go(-1); return false;" href="#0" class="link-back">Back</a>
+
+      <h1 class="heading-large">
+        Was the total of your organisation&rsquo;s last annual balance sheet more than &pound;5.1 million?
+      </h1>
+
+      <form action="small-companies" method="get" class="form">
+
+        <div class="form-group">
+          <fieldset class="inline">
+            <legend class="visually-hidden">Was the total of your organisation&rsquo;s last annual balance sheet more than &pound;5.1 million?</legend>
+            <div class="multiple-choice">
+              <input id="balancesheetYes" type="radio" name="balancesheet" value="Yes" {{ checked('balancesheet','Yes') }}>
+              <label for="balancesheetYes">Yes</label>
+            </div>
+
+            <div class="multiple-choice">
+              <input id="balancesheetNo" type="radio" name="balancesheet" value="No" {{ checked('balancesheet','No') }}>
+              <label for="balancesheetNo">No</label>
+            </div>
+          </fieldset>
+        </div>
+
+        <div class="form-group">
+          <input class="button" type="submit" value="Continue">
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
