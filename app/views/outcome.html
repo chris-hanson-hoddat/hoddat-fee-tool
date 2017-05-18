@@ -20,83 +20,87 @@
         {% if data['outcome'] == 'small' %}
           <p class="lede">Based on your answers you are a:</p>
           <h1 class="heading-xlarge">Small or charitable sponsor </h1>
-          <p>This means:</p>
-          <ul class="list list-bullet">
-            <li>renewing your licence will cost &pound;536</li>
-            <li>joining the premium sponsor scheme will cost &pound;8,000</li>
-            <li>joining the premium sponsor scheme for 3 months will cost &pound;2,000</li>
-          </ul>
-          <p>The <a href="https://www.gov.uk/uk-visa-sponsorship-employers/immigration-skills-charge">immigration skills charge</a> will cost:</p>
-          <ul class="list list-bullet">
-            <li>&pound;364 for the first 12 months you employ a sponsored worker </li>
-            <li>&pound;182 for each additional 6 months you employ a sponsored worker</li>
-          </ul>
+          <p>The fees for licence applications are as follows.</p>
+          <table>
+  <thead>
+    <tr>
+      <th>Type of licence</th>
+      <th>Fee for small or charitable sponsors</th>
+      <th>Fee for medium or large sponsors</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Tier 2</td>
+      <td>£536</td>
+      <td>£1,476</td>
+    </tr>
+    <tr>
+      <td>Tier 5</td>
+      <td>£536</td>
+      <td>£536</td>
+    </tr>
+    <tr>
+      <td>Tier 2 and Tier 5</td>
+      <td>£536</td>
+      <td>£ 1,476</td>
+    </tr>
+    <tr>
+      <td>Add a Tier 2 to an existing Tier 5</td>
+      <td>No fee</td>
+      <td>£940</td>
+    </tr>
+    <tr>
+      <td>Add a Tier 5 to an existing Tier 2</td>
+      <td>No fee</td>
+      <td>No fee</td>
+    </tr>
+  </tbody>
+</table>
 
         {% elif data['outcome'] == 'large' %}
           <p class="lede">Based on your answers you are a:</p>
-          <h1 class="heading-xlarge">Large Tier 2 sponsor</h1>
-          <p>This means:</p>
-          <ul class="list list-bullet">
-            <li>renewing your licence will cost &pound;1,476 </li>
-            <li>joining the premium sponsor scheme will cost &pound;25,000</li>
-            <li>joining the premium sponsor scheme for 3 months will cost &pound;6,250 </li>
-          </ul>
-          <p>The <a href="https://www.gov.uk/uk-visa-sponsorship-employers/immigration-skills-charge">immigration skills charge</a> will cost:</p>
-          <ul class="list list-bullet">
-            <li>&pound;1,000 for the first 12 months you employ a sponsored worker </li>
-            <li>&pound;500 for each additional 6 months you employ a sponsored worker</li>
-          </ul>
-        {% else %}
+          <h1 class="heading-xlarge">Large sponsor</h1>
+          <p>The fees for licence applications are as follows.</p>
+          <table>
+  <thead>
+    <tr>
+      <th>Type of licence</th>
+      <th>Fee for small or charitable sponsors</th>
+      <th>Fee for large sponsors</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Tier 2</td>
+      <td>£536</td>
+      <td>£1,476</td>
+    </tr>
+    <tr>
+      <td>Tier 5</td>
+      <td>£536</td>
+      <td>£536</td>
+    </tr>
+    <tr>
+      <td>Tier 2 and Tier 5</td>
+      <td>£536</td>
+      <td>£ 1,476</td>
+    </tr>
+    <tr>
+      <td>Add a Tier 2 to an existing Tier 5</td>
+      <td>No fee</td>
+      <td>£940</td>
+    </tr>
+    <tr>
+      <td>Add a Tier 5 to an existing Tier 2</td>
+      <td>No fee</td>
+      <td>No fee</td>
+    </tr>
+  </tbody>
+</table>        {% else %}
           <p>Error: no outcome. <a href="start">Start again</a></p>
         {% endif %}
-
-
-
-
       {% else %}
-      <!-- All content shown for dev -->
-        <div class="dev-note-block">
-          <span class="dev-note">If the sponsor is small</span>
-
-          <p class="lede">Based on your answers you are a:</p>
-          <h1 class="heading-xlarge">Small or charitable sponsor </h1>
-          <p>This means:</p>
-          <span class="dev-note">Amounts pulled in when fees added to system</span>
-          <ul class="list list-bullet">
-            <li>renewing your licence will cost &pound;536</li>
-            <li>joining the premium sponsor scheme will cost &pound;8,000</li>
-            <li>joining the premium sponsor scheme for 3 months will cost &pound;2,000</li>
-          </ul>
-          <p>The <a href="https://www.gov.uk/uk-visa-sponsorship-employers/immigration-skills-charge">immigration skills charge</a> will cost:</p>
-          <span class="dev-note">Amounts pulled in when fees added to system</span>
-          <ul class="list list-bullet">
-            <li>&pound;364 for the first 12 months you employ a sponsored worker </li>
-            <li>&pound;182 for each additional 6 months you employ a sponsored worker</li>
-          </ul>
-        </div>
-
-
-        <div class="dev-note-block">
-          <span class="dev-note">If the sponsor is large</span>
-
-          <p class="lede">Based on your answers you are a:</p>
-          <h1 class="heading-xlarge">Large Tier 2 sponsor</h1>
-          <p>This means:</p>
-          <span class="dev-note">Amounts pulled in when fees added to system</span>
-          <ul class="list list-bullet">
-            <li>renewing your licence will cost &pound;1,476 </li>
-            <li>joining the premium sponsor scheme will cost &pound;25,000</li>
-            <li>joining the premium sponsor scheme for 3 months will cost &pound;6,250 </li>
-          </ul>
-          <p>The <a href="https://www.gov.uk/uk-visa-sponsorship-employers/immigration-skills-charge">immigration skills charge</a> will cost:</p>
-          <span class="dev-note">Amounts pulled in when fees added to system</span>
-          <ul class="list list-bullet">
-            <li>&pound;1,000 for the first 12 months you employ a sponsored worker </li>
-            <li>&pound;500 for each additional 6 months you employ a sponsored worker</li>
-          </ul>
-        </div>
-
-      {% endif %}
 
     </div>
   </div>

@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block page_title %}
-  What tiers are you applying for?
+  What type of licence are you applying for?
 {% endblock %}
 
 {% block content %}
@@ -16,14 +16,14 @@
       <a onclick="history.go(-1); return false;" href="#0" class="link-back">Back</a>
 
       <h1 class="heading-large">
-        What tiers are you applying for?
+        What type of licence are you applying for?
       </h1>
 
       <form action="charity" method="get" class="form">
 
         <div class="form-group">
           <fieldset>
-            <legend class="visually-hidden">What tiers are you applying for?</legend>
+            <legend class="visually-hidden">What type of licence are you applying for?</legend>
             <div class="multiple-choice">
               <input id="tier2" type="checkbox" name="tier" value="Tier 2" {{ checked('tier','Tier 2') }}>
               <label for="tier2">Tier 2</label>
