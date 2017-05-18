@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block page_title %}
-  Was your organisation&rsquo;s most recent turnover more than &pound;10.2 million?
+  What was your organisation&rsquo;s most recent reported annual turnover?
 {% endblock %}
 
 {% block content %}
@@ -16,22 +16,22 @@
       <a onclick="history.go(-1); return false;" href="#0" class="link-back">Back</a>
 
       <h1 class="heading-large">
-        Was your organisation&rsquo;s most recent turnover more than &pound;10.2 million?
+        What was your organisation&rsquo;s most recent reported annual turnover?
       </h1>
 
       <form action="balance-sheet" method="get" class="form">
 
         <div class="form-group">
           <fieldset class="inline">
-            <legend class="visually-hidden">Was your organisation&rsquo;s most recent turnover more than &pound;10.2 million?</legend>
+            <legend class="visually-hidden">What was your organisation&rsquo;s most recent reported annual turnover?</legend>
             <div class="multiple-choice">
               <input id="turnoverYes" type="radio" name="turnover" value="Yes" {{ checked('turnover','Yes') }}>
-              <label for="turnoverYes">Yes</label>
+              <label for="turnoverYes">&pound;10.2 million or less</label>
             </div>
 
             <div class="multiple-choice">
               <input id="turnoverNo" type="radio" name="turnover" value="No" {{ checked('turnover','No') }}>
-              <label for="turnoverNo">No</label>
+              <label for="turnoverNo">More than &pound;10.2 million</label>
             </div>
           </fieldset>
         </div>

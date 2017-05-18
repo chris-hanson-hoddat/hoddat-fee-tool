@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block page_title %}
-  Companies excluded from the small companies regime
+  Excluded company types
 {% endblock %}
 
 {% block content %}
@@ -16,7 +16,7 @@
       <a onclick="history.go(-1); return false;" href="#0" class="link-back">Back</a>
 
       <h1 class="heading-large">
-        Companies excluded from the small companies regime
+        Excluded company types
       </h1>
 
       <p>The Companies Act 2006 excludes the following types of companies from the small companies regime:</p>
@@ -32,11 +32,11 @@
 
       <form action="small-companies-group" method="get" class="form">
 
-        <h2 class="heading-medium">Has your organisation been any of these types of companies in the last financial year?</h2>
+        <h2 class="heading-medium">In the last full financial year, has your company been any of the above?</h2>
 
         <div class="form-group">
           <fieldset class="inline">
-            <legend class="visually-hidden">Has your organisation been any of these types of company in the last financial year?</legend>
+            <legend class="visually-hidden">In the last full financial year, has your company been any of the above?</legend>
             <div class="multiple-choice">
               <input id="smallcompaniesYes" type="radio" name="smallcompanies" value="Yes" {{ checked('smallcompanies','Yes') }}>
               <label for="smallcompaniesYes">Yes</label>
