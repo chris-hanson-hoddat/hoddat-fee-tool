@@ -43,7 +43,7 @@ router.get('/balance-sheet', function (req, res) {
     req.session.data['outcome'] = 'large';
     res.redirect('outcome');
   }
-  else if (turnover == 'No' && employees <= '50') {
+  else if (turnover == 'No' && employees == '50 or fewer') {
     res.redirect('small-companies');
   }
   else {

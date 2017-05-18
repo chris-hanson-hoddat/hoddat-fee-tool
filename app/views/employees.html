@@ -22,8 +22,18 @@
       <form action="turnover" method="get" class="form">
 
         <div class="form-group">
-          <label class="form-label" for="employees">Number of employees</label>
-          <input class="form-control" id="employees" name="employees" value="{{ data['employees']}}" type="text" autocomplete="off">
+          <fieldset class="inline">
+            <legend class="visually-hidden">Number of employees</legend>
+            <div class="multiple-choice">
+              <input id="employeesunder50" type="radio" name="employees" value="50 or fewer" {{ checked('employees','50 or fewer') }}>
+              <label for="employeesunder50">50 or fewer</label>
+            </div>
+
+            <div class="multiple-choice">
+              <input id="employeesover50" type="radio" name="employees" value="Over 50" {{ checked('employees','More than 50') }}>
+              <label for="employeesover50">More than 50</label>
+            </div>
+          </fieldset>
         </div>
 
         <div class="form-group">
