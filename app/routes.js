@@ -10,13 +10,24 @@ router.get('/', function (req, res) {
 
 
 
+router.get('/charity', function (req, res) {
+  var tier = req.session.data['tier']
+  if ( tier.indexOf('Tier 2') === -1 ) {
+    req.session.data['outcome'] = 'small';
+    res.redirect('outcome');
+  }
+  else {
+    res.render('charity');
+  }
+
+})
 
 router.get('/employees', function (req, res) {
   var charity = req.session.data['charity']
 
   if (charity == 'Yes') {
     req.session.data['outcome'] = 'small';
-    res.redirect('outcome');
+    res.render('outcome');
   }
   else {
     res.render('employees');
