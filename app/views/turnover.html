@@ -22,7 +22,7 @@
       <form action="balance-sheet" method="get" class="form">
 
         <div class="form-group">
-          <fieldset class="inline">
+          <fieldset class="inline" data-required data-error="Choose at least one option">
             <legend class="visually-hidden">What was your organisation&rsquo;s most recent reported annual turnover?</legend>
             <div class="multiple-choice">
               <input id="turnoverNo" type="radio" name="turnover" value="No" {{ checked('turnover','No') }}>

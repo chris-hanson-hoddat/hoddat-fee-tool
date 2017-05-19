@@ -30,7 +30,7 @@
 
         <h2 class="heading-medium">In your last full financial year, has your organisation been any of the above?</h2>
         <div class="form-group">
-          <fieldset class="inline">
+          <fieldset class="inline" data-required data-error="Choose at least one option">
             <legend class="visually-hidden">In your last full financial year, has your organisation been any of the above?</legend>
             <div class="multiple-choice">
               <input id="smallcompaniesYes" type="radio" name="smallcompanies" value="Yes" {{ checked('smallcompanies','Yes') }}>

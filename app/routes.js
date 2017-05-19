@@ -12,6 +12,7 @@ router.get('/', function (req, res) {
 
 router.get('/charity', function (req, res) {
   var tier = req.session.data['tier']
+  
   if ( tier.indexOf('Tier 2') === -1 ) {
     req.session.data['outcome'] = 'small';
     res.redirect('outcome');

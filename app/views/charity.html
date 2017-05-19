@@ -22,7 +22,7 @@
       <form action="employees" method="get" class="form">
 
         <div class="form-group">
-          <fieldset class="inline">
+          <fieldset class="inline" data-required data-error="Choose at least one option">
             <legend class="visually-hidden">Does your organisation have charitable status?</legend>
             <div class="multiple-choice">
               <input id="charityYes" type="radio" name="charity" value="Yes" {{ checked('charity','Yes') }}>

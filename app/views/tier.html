@@ -22,7 +22,7 @@
       <form action="charity" method="get" class="form">
 
         <div class="form-group">
-          <fieldset>
+          <fieldset data-required data-error="Choose at least one option">
             <legend class="visually-hidden">What type of licence are you applying for?</legend>
             <div class="multiple-choice">
               <input id="tier2" type="checkbox" name="tier" value="Tier 2" {{ checked('tier','Tier 2') }}>

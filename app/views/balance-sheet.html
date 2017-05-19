@@ -22,7 +22,7 @@
       <form action="small-companies" method="get" class="form">
 
         <div class="form-group">
-          <fieldset class="inline">
+          <fieldset class="inline" data-required data-error="Choose at least one option">
             <legend class="visually-hidden">What was the value of your last annual balance sheet?</legend>
             <div class="multiple-choice">
               <input id="balancesheetNo" type="radio" name="balancesheet" value="No" {{ checked('balancesheet','No') }}>

@@ -23,7 +23,7 @@
       <form action="turnover" method="get" class="form">
 
         <div class="form-group">
-          <fieldset class="inline">
+          <fieldset class="inline" data-required data-error="Choose at least one option">
             <legend class="visually-hidden">Number of employees</legend>
             <div class="multiple-choice">
               <input id="employeesunder50" type="radio" name="employees" value="50 or fewer" {{ checked('employees','50 or fewer') }}>
