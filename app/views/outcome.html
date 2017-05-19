@@ -21,15 +21,18 @@
           <p class="lede">Based on your answers you are a:</p>
           <h1 class="heading-xlarge">Small or charitable sponsor </h1>
           <!-- <p>For small or charitable sponsors the Tier 2 licence application fee is &pound;536.</p> -->
-          <p>This means the fee for a new licence application including the tiers you&rsquo;ve chosen will be &pound;536.</p>
+          <p>This means the licence application fee for the tiers you&rsquo;ve selected will be &pound;536.</p>
           <!-- <p>To apply for the type of licence you have selected will cost &pound;536.</p> -->
 <div class="panel panel-border-narrow">
-  This application fee is for new licences only. There are different fees for adding new tiers to an existing licence.
+  This application fee is for new licences only. There are <a href="https://www.gov.uk/uk-visa-sponsorship-employers/apply-for-your-licence">different fees</a> for adding new tiers to an existing licence.
 </div>
         {% elif data['outcome'] == 'large' %}
           <p class="lede">Based on your answers you are a:</p>
           <h1 class="heading-xlarge">Large sponsor</h1>
-        <p>This means the fee for a new licence application including the tiers you have selected will be &pound;536.</p>
+        <p>This means the licence application fee for the tiers you&rsquo;ve selected will be &pound;1,476.</p>
+        <div class="panel panel-border-narrow">
+          This application fee is for new licences only. There are <a href="https://www.gov.uk/uk-visa-sponsorship-employers/apply-for-your-licence">different fees</a> for adding new tiers to an existing licence.
+        </div>
         {% else %}
           <p>Error: no outcome. <a href="start">Start again</a></p>
         {% endif %}
