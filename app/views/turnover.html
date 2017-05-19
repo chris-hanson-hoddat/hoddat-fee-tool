@@ -25,13 +25,13 @@
           <fieldset class="inline">
             <legend class="visually-hidden">What was your organisation&rsquo;s most recent reported annual turnover?</legend>
             <div class="multiple-choice">
-              <input id="turnoverYes" type="radio" name="turnover" value="Yes" {{ checked('turnover','Yes') }}>
-              <label for="turnoverYes">&pound;10.2 million or less</label>
+              <input id="turnoverNo" type="radio" name="turnover" value="No" {{ checked('turnover','No') }}>
+              <label for="turnoverNo">&pound;10.2 million or less</label>
             </div>
 
             <div class="multiple-choice">
-              <input id="turnoverNo" type="radio" name="turnover" value="No" {{ checked('turnover','No') }}>
-              <label for="turnoverNo">More than &pound;10.2 million</label>
+              <input id="turnoverYes" type="radio" name="turnover" value="Yes" {{ checked('turnover','Yes') }}>
+              <label for="turnoverYes">More than &pound;10.2 million</label>
             </div>
           </fieldset>
         </div>

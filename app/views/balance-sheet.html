@@ -25,13 +25,13 @@
           <fieldset class="inline">
             <legend class="visually-hidden">What was the value of your last annual balance sheet?</legend>
             <div class="multiple-choice">
-              <input id="balancesheetYes" type="radio" name="balancesheet" value="Yes" {{ checked('balancesheet','Yes') }}>
-              <label for="balancesheetYes">&pound;5.1 million or less</label>
+              <input id="balancesheetNo" type="radio" name="balancesheet" value="No" {{ checked('balancesheet','No') }}>
+              <label for="balancesheetNo">&pound;5.1 million or less</label>
             </div>
 
             <div class="multiple-choice">
-              <input id="balancesheetNo" type="radio" name="balancesheet" value="No" {{ checked('balancesheet','No') }}>
-              <label for="balancesheetNo">More than &pound;5.1 million</label>
+              <input id="balancesheetYes" type="radio" name="balancesheet" value="Yes" {{ checked('balancesheet','Yes') }}>
+              <label for="balancesheetYes">More than &pound;5.1 million</label>
             </div>
           </fieldset>
         </div>
