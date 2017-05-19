@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block page_title %}
-  What was the value of your last annual balance sheet?
+  What is the value of your balance sheet?
 {% endblock %}
 
 {% block content %}
@@ -16,14 +16,14 @@
       <a onclick="history.go(-1); return false;" href="#0" class="link-back">Back</a>
 
       <h1 class="heading-large">
-        What was the value of your last annual balance sheet?
+        What is the value of your balance sheet?
       </h1>
-
+      <p>Use the balance sheet value from your most recent full year accounts.</p>
       <form action="small-companies" method="get" class="form">
 
         <div class="form-group">
           <fieldset class="inline" data-required data-error="Choose at least one option">
-            <legend class="visually-hidden">What was the value of your last annual balance sheet?</legend>
+            <legend class="visually-hidden">What is the value of your balance sheet?</legend>
             <div class="multiple-choice">
               <input id="balancesheetNo" type="radio" name="balancesheet" value="No" {{ checked('balancesheet','No') }}>
               <label for="balancesheetNo">&pound;5.1 million or less</label>

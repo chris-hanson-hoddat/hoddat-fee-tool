@@ -20,37 +20,24 @@
         {% if data['outcome'] == 'small' %}
           <p class="lede">Based on your answers you are a:</p>
           <h1 class="heading-xlarge">Small or charitable sponsor </h1>
-          <p>This means:</p>
-          <ul class="list list-bullet">
-            <li>renewing your licence will cost &pound;536</li>
-            <li>joining the premium sponsor scheme will cost &pound;8,000</li>
-            <li>joining the premium sponsor scheme for 3 months will cost &pound;2,000</li>
-          </ul>
-          <p>The <a href="https://www.gov.uk/uk-visa-sponsorship-employers/immigration-skills-charge">immigration skills charge</a> will cost:</p>
-          <ul class="list list-bullet">
-            <li>&pound;364 for the first 12 months you employ a sponsored worker </li>
-            <li>&pound;182 for each additional 6 months you employ a sponsored worker</li>
-          </ul>
-
+          <!-- <p>For small or charitable sponsors the Tier 2 licence application fee is &pound;536.</p> -->
+          <p>This means the licence application fee for the tiers you&rsquo;ve selected will be &pound;536.</p>
+          <!-- <p>To apply for the type of licence you have selected will cost &pound;536.</p> -->
+<div class="panel panel-border-narrow">
+  This application fee is for new licences only. There are <a href="https://www.gov.uk/uk-visa-sponsorship-employers/apply-for-your-licence">different fees</a> for adding new tiers to an existing licence.
+</div>
         {% elif data['outcome'] == 'large' %}
           <p class="lede">Based on your answers you are a:</p>
-          <h1 class="heading-xlarge">Large Tier 2 sponsor</h1>
-          <p>This means:</p>
-          <ul class="list list-bullet">
-            <li>renewing your licence will cost &pound;1,476 </li>
-            <li>joining the premium sponsor scheme will cost &pound;25,000</li>
-            <li>joining the premium sponsor scheme for 3 months will cost &pound;6,250 </li>
-          </ul>
-          <p>The <a href="https://www.gov.uk/uk-visa-sponsorship-employers/immigration-skills-charge">immigration skills charge</a> will cost:</p>
-          <ul class="list list-bullet">
-            <li>&pound;1,000 for the first 12 months you employ a sponsored worker </li>
-            <li>&pound;500 for each additional 6 months you employ a sponsored worker</li>
-          </ul>
+          <h1 class="heading-xlarge">Large sponsor</h1>
+        <p>This means the licence application fee for the tiers you&rsquo;ve selected will be &pound;1,476.</p>
+        <div class="panel panel-border-narrow">
+          This application fee is for new licences only. There are <a href="https://www.gov.uk/uk-visa-sponsorship-employers/apply-for-your-licence">different fees</a> for adding new tiers to an existing licence.
+        </div>
         {% else %}
           <p>Error: no outcome. <a href="start">Start again</a></p>
         {% endif %}
 
-
+<a href="https://www.gov.uk/apply-sponsor-licence">Apply for your licence online</a>
 
 
       {% else %}
@@ -60,19 +47,8 @@
 
           <p class="lede">Based on your answers you are a:</p>
           <h1 class="heading-xlarge">Small or charitable sponsor </h1>
-          <p>This means:</p>
-          <span class="dev-note">Amounts pulled in when fees added to system</span>
-          <ul class="list list-bullet">
-            <li>renewing your licence will cost &pound;536</li>
-            <li>joining the premium sponsor scheme will cost &pound;8,000</li>
-            <li>joining the premium sponsor scheme for 3 months will cost &pound;2,000</li>
-          </ul>
-          <p>The <a href="https://www.gov.uk/uk-visa-sponsorship-employers/immigration-skills-charge">immigration skills charge</a> will cost:</p>
-          <span class="dev-note">Amounts pulled in when fees added to system</span>
-          <ul class="list list-bullet">
-            <li>&pound;364 for the first 12 months you employ a sponsored worker </li>
-            <li>&pound;182 for each additional 6 months you employ a sponsored worker</li>
-          </ul>
+          <p>The licence application fee for small or charitable sponsors is &pound;536.</p>
+
         </div>
 
 
@@ -80,20 +56,8 @@
           <span class="dev-note">If the sponsor is large</span>
 
           <p class="lede">Based on your answers you are a:</p>
-          <h1 class="heading-xlarge">Large Tier 2 sponsor</h1>
-          <p>This means:</p>
-          <span class="dev-note">Amounts pulled in when fees added to system</span>
-          <ul class="list list-bullet">
-            <li>renewing your licence will cost &pound;1,476 </li>
-            <li>joining the premium sponsor scheme will cost &pound;25,000</li>
-            <li>joining the premium sponsor scheme for 3 months will cost &pound;6,250 </li>
-          </ul>
-          <p>The <a href="https://www.gov.uk/uk-visa-sponsorship-employers/immigration-skills-charge">immigration skills charge</a> will cost:</p>
-          <span class="dev-note">Amounts pulled in when fees added to system</span>
-          <ul class="list list-bullet">
-            <li>&pound;1,000 for the first 12 months you employ a sponsored worker </li>
-            <li>&pound;500 for each additional 6 months you employ a sponsored worker</li>
-          </ul>
+          <h1 class="heading-xlarge">Large sponsor</h1>
+          <p>The licence application fee for large sponsors is &pound;1,476.</p>
         </div>
 
       {% endif %}
