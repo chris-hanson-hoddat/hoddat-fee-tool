@@ -15,7 +15,7 @@
 
       <a onclick="history.go(-1); return false;" href="#0" class="link-back">Back</a>
 
-      <h1 class="heading-large">
+      <!-- <h1 class="heading-large">
         What type of licence are you applying for?
       </h1>
 
@@ -45,8 +45,32 @@
           <input class="button" type="submit" value="Continue">
         </div>
 
-      </form>
+      </form> -->
+      <h1 class="heading-large">
+        Does your application include Tier 2 sponsorship?
+      </h1>
+      <!-- <p>The application fee depends on whether your licence includes Tier 2 sponsorship or only Tiers 4 and 5.</p> -->
+      <!-- <p>If your licence application doesn&rsquo;t include sponsoring people under Tier 2, you will pay the fee for small or charitable sponsors.</p> -->
+      <!-- <p>If you're only applying to sponsor people under Tier 4, Tier 5 or both, you will pay the fee for small or charitable sponsors.</p>
+      <p>If your application includes Tier 2 sponsorship (on its own or alongside another tier), you may need to pay the fee for large sponsors.</p> -->
 
+<div class="form-group">
+  <fieldset class="inline">
+    <legend class="visually-hidden">Does your application include a tier 2 licence?</legend>
+    <div class="multiple-choice">
+      <input id="tier2" type="radio" name="tier2" value="Yes" {{ checked('tier2','Yes') }}>
+      <label for="tier2">Yes</label>
+    </div>
+
+    <div class="multiple-choice">
+      <input id="notTier2" type="radio" name="notTier2" value="No" {{ checked('notTier2','No') }}>
+      <label for="notTier2">No</label>
+    </div>
+  </fieldset>
+</div>
+<div class="form-group">
+  <input class="button" type="submit" value="Continue">
+</div>
     </div>
   </div>
 </main>
