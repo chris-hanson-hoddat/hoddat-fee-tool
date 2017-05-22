@@ -16,27 +16,27 @@
       <a onclick="history.go(-1); return false;" href="#0" class="link-back">Back</a>
 
       <h1 class="heading-large">
-        Which tiers are included in your licence application?
+        What type of licence are you applying for?
       </h1>
 
       <form action="charity" method="get" class="form">
 
         <div class="form-group">
           <fieldset data-required data-error="Choose at least one option">
-            <legend class="visually-hidden">Which tiers are included in your licence application?</legend>
+            <legend class="visually-hidden">What type of licence are you applying for?</legend>
             <div class="multiple-choice">
               <input id="tier2" type="checkbox" name="tier" value="Tier 2" {{ checked('tier','Tier 2') }}>
-              <label for="tier2">Tier 2</label>
+              <label for="tier2">Tier 2&hairsp;&mdash;&hairsp;skilled workers with a job offer</label>
             </div>
 
             <div class="multiple-choice">
               <input id="tier4" type="checkbox" name="tier" value="Tier 4" {{ checked('tier','Tier 4') }}>
-              <label for="tier4">Tier 4</label>
+              <label for="tier4">Tier 4&hairsp;&mdash;&hairsp;students</label>
             </div>
 
             <div class="multiple-choice">
               <input id="tier5" type="checkbox" name="tier" value="Tier 5" {{ checked('tier','Tier 5') }}>
-              <label for="tier5">Tier 5</label>
+              <label for="tier5">Tier 5&hairsp;&mdash;&hairsp;temporary workers</label>
             </div>
           </fieldset>
         </div>

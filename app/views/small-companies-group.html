@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block page_title %}
-  Members of ineligible groups
+    Groups whose members always pay the larger fee
 {% endblock %}
 
 {% block content %}
@@ -16,11 +16,11 @@
       <a onclick="history.go(-1); return false;" href="#0" class="link-back">Back</a>
 
       <h1 class="heading-large">
-        Groups whose members are always large sponsors
+        Groups whose members always pay the larger fee
       </h1>
 
-      <p>If your organisation is part of a group, you may automatically be a large sponsor.</p>
-      <p>All the members of a group are large sponsors if any member is:</p>
+      <p>If your organisation is part of a group you may need to pay the larger fee of &pound;1,476.</p>
+      <p>All the members of a group pay the larger fee if any member is:</p>
 
       <ul class="list list-bullet">
         <li>a traded company</li>
@@ -36,7 +36,7 @@
 
         <div class="form-group">
           <fieldset class="inline" data-required data-error="Choose at least one option">
-            <legend class="visually-hidden">At any time in your last full financial year, has your organisation been part of a group that includes any of these?</legend>
+            <legend class="visually-hidden">At any time in your last full financial year, have you been part of a group that includes any of these?</legend>
             <div class="multiple-choice">
               <input id="smallcompaniesgroupYes" type="radio" name="smallcompaniesgroup" value="Yes" {{ checked('smallcompaniesgroup','Yes') }}>
               <label for="smallcompaniesgroupYes">Yes</label>
