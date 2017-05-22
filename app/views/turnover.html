@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block page_title %}
-  What's your most recent annual turnover?
+  What&rsquo;s your most recent annual turnover?
 {% endblock %}
 
 {% block content %}
@@ -16,14 +16,14 @@
       <a onclick="history.go(-1); return false;" href="#0" class="link-back">Back</a>
 
       <h1 class="heading-large">
-        What's your most recent annual turnover?
+        What&rsquo;s your most recent annual turnover?
       </h1>
       <p>Use the turnover for your last full financial year.</p>
       <form action="balance-sheet" method="get" class="form">
 
         <div class="form-group">
           <fieldset class="inline" data-required data-error="Choose at least one option">
-            <legend class="visually-hidden">What's your most recent annual turnover?</legend>
+            <legend class="visually-hidden">What&rsquo;s your most recent annual turnover?</legend>
             <div class="multiple-choice">
               <input id="turnoverNo" type="radio" name="turnover" value="No" {{ checked('turnover','No') }}>
               <label for="turnoverNo">&pound;10.2 million or less</label>

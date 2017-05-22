@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block page_title %}
-  Does your organisation have charitable status?
+  Do you have charitable status?
 {% endblock %}
 
 {% block content %}
@@ -23,7 +23,7 @@
 
         <div class="form-group">
           <fieldset class="inline" data-required data-error="Choose at least one option">
-            <legend class="visually-hidden">Does your organisation have charitable status?</legend>
+            <legend class="visually-hidden">Do you have charitable status?</legend>
             <div class="multiple-choice">
               <input id="charityYes" type="radio" name="charity" value="Yes" {{ checked('charity','Yes') }}>
               <label for="charityYes">Yes</label>
