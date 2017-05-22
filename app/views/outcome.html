@@ -17,27 +17,34 @@
 
       {% if data['devcontent'] != 'true' %}
 
+        <p class="lede">Based on your answers you are a:</p>
+
         {% if data['outcome'] == 'small' %}
-          <p class="lede">Based on your answers you are a:</p>
+
           <h1 class="heading-xlarge">Small or charitable sponsor </h1>
           <!-- <p>For small or charitable sponsors the Tier 2 licence application fee is &pound;536.</p> -->
           <p>This means the licence application fee for the tiers you&rsquo;ve selected will be &pound;536.</p>
           <!-- <p>To apply for the type of licence you have selected will cost &pound;536.</p> -->
-<div class="panel panel-border-narrow">
-  This application fee is for new licences only. There are <a href="https://www.gov.uk/uk-visa-sponsorship-employers/apply-for-your-licence">different fees</a> for adding new tiers to an existing licence.
-</div>
+
+          <div class="panel panel-border-wide">
+            This application fee is for new licences only. There are <a href="https://www.gov.uk/uk-visa-sponsorship-employers/apply-for-your-licence">different fees</a> for adding new tiers to an existing licence.
+          </div>
+
         {% elif data['outcome'] == 'large' %}
-          <p class="lede">Based on your answers you are a:</p>
+
           <h1 class="heading-xlarge">Large sponsor</h1>
-        <p>This means the licence application fee for the tiers you&rsquo;ve selected will be &pound;1,476.</p>
-        <div class="panel panel-border-narrow">
-          This application fee is for new licences only. There are <a href="https://www.gov.uk/uk-visa-sponsorship-employers/apply-for-your-licence">different fees</a> for adding new tiers to an existing licence.
-        </div>
+          <p>This means the licence application fee for the tiers you&rsquo;ve selected will be &pound;1,476.</p>
+          <div class="panel panel-border-wide">
+            This application fee is for new licences only. There are <a href="https://www.gov.uk/uk-visa-sponsorship-employers/apply-for-your-licence">different fees</a> for adding new tiers to an existing licence.
+          </div>
+
         {% else %}
+
           <p>Error: no outcome. <a href="start">Start again</a></p>
+
         {% endif %}
 
-<a href="https://www.gov.uk/apply-sponsor-licence">Apply for your licence online</a>
+        <a href="https://www.gov.uk/apply-sponsor-licence">Apply for your licence online</a>
 
 
       {% else %}
@@ -47,7 +54,13 @@
 
           <p class="lede">Based on your answers you are a:</p>
           <h1 class="heading-xlarge">Small or charitable sponsor </h1>
-          <p>The licence application fee for small or charitable sponsors is &pound;536.</p>
+          <!-- <p>For small or charitable sponsors the Tier 2 licence application fee is &pound;536.</p> -->
+          <p>This means the licence application fee for the tiers you&rsquo;ve selected will be &pound;536.</p>
+          <!-- <p>To apply for the type of licence you have selected will cost &pound;536.</p> -->
+
+          <div class="panel panel-border-narrow">
+            This application fee is for new licences only. There are <a href="https://www.gov.uk/uk-visa-sponsorship-employers/apply-for-your-licence">different fees</a> for adding new tiers to an existing licence.
+          </div>
 
         </div>
 
@@ -57,7 +70,11 @@
 
           <p class="lede">Based on your answers you are a:</p>
           <h1 class="heading-xlarge">Large sponsor</h1>
-          <p>The licence application fee for large sponsors is &pound;1,476.</p>
+          <p>This means the licence application fee for the tiers you&rsquo;ve selected will be &pound;1,476.</p>
+          <div class="panel panel-border-narrow">
+            This application fee is for new licences only. There are <a href="https://www.gov.uk/uk-visa-sponsorship-employers/apply-for-your-licence">different fees</a> for adding new tiers to an existing licence.
+          </div>
+
         </div>
 
       {% endif %}
