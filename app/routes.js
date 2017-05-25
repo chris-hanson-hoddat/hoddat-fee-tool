@@ -12,7 +12,7 @@ router.get('/', function (req, res) {
 
 router.get('/charity', function (req, res) {
   var tier = req.session.data['tier']
-  
+
   if ( tier.indexOf('Tier 2') === -1 ) {
     req.session.data['outcome'] = 'small';
     res.redirect('outcome');
@@ -40,7 +40,7 @@ router.get('/balance-sheet', function (req, res) {
   var employees = req.session.data['employees']
   var turnover = req.session.data['turnover']
 
-  if (turnover == 'Yes') {
+  if (turnover == 'Yes' && employees == 'Over 50') {
     req.session.data['outcome'] = 'large';
     res.redirect('outcome');
   }
