@@ -2,6 +2,7 @@
 
 {% block page_title %}
   What type of licence are you applying for?
+
 {% endblock %}
 
 {% block content %}
@@ -14,11 +15,11 @@
     <div class="column-two-thirds">
 
       <a onclick="history.go(-1); return false;" href="#0" class="link-back">Back</a>
-
       <h1 class="heading-large">
-        What type of licence are you applying for?
+What type of licence are you applying for?
       </h1>
 
+<p>Tick all the tiers you've included in your licence application.</p>
       <form action="charity" method="get" class="form">
 
         <div class="form-group">
@@ -26,7 +27,7 @@
             <legend class="visually-hidden">What type of licence are you applying for?</legend>
             <div class="multiple-choice">
               <input id="tier2" type="checkbox" name="tier" value="Tier 2" {{ checked('tier','Tier 2') }}>
-              <label for="tier2">Tier 2 &ndash; skilled workers with a job offer</label>
+              <label for="tier2">Tier 2 &ndash; skilled workers</label>
             </div>
 
             <div class="multiple-choice">
@@ -36,7 +37,7 @@
 
             <div class="multiple-choice">
               <input id="tier5" type="checkbox" name="tier" value="Tier 5" {{ checked('tier','Tier 5') }}>
-              <label for="tier5">Tier 5 &ndash; temporary workers</label>
+              <label for="tier5">Tier 5 &ndash;  temporary workers</label>
             </div>
           </fieldset>
         </div>
